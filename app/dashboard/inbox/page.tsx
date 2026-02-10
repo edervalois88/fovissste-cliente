@@ -174,8 +174,9 @@ export default function InboxPage() {
                     <InboxTable 
                         documents={documents} 
                         onRefresh={fetchInbox} 
-                        onShowLifecycle={handleShowHistory}
-                        onShowAttachment={(url, encrypted) => handleShowAttachment(url, encrypted)}
+                        onShowAttachment={(url, encrypted) => {
+                            if (url) handleShowAttachment(url, !!encrypted);
+                        }}
                     />
                 </div>
             </div>
