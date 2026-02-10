@@ -1,5 +1,5 @@
 
-import { UserRole } from '@/lib/services/user.service'; // We might need to export UserRole type or define it here if not available
+
 
 // Should match the roles used in the app
 export type AppRole = 'Admin' | 'Gestor' | 'Auditor' | 'Usuario';
