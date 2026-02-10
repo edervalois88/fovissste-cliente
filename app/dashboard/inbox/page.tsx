@@ -3,7 +3,8 @@
 import { useState, useEffect } from 'react';
 import { InboxTable } from '@/components/modules/dashboard/inbox/InboxTable';
 import { AttachmentViewer } from '@/components/modules/dashboard/inbox/redesign/AttachmentViewer';
-import { DocumentLifecycle, ActivityStep } from '@/components/modules/dashboard/inbox/redesign/DocumentLifecycle';
+import { DocumentLifecycle } from '@/components/modules/dashboard/inbox/redesign/DocumentLifecycle';
+import { ActivityStep } from '@/components/modules/dashboard/inbox/redesign/constants';
 import { Search, ChevronDown, MoreVertical, RefreshCw, Filter } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { DocumentService } from '@/lib/services/document.service';
