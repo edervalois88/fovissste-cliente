@@ -12,7 +12,7 @@ interface StatCardProps {
   trend?: string;
   className?: string;
 }
-}
+
 
 export const StatCard: React.FC<StatCardProps> = ({ 
   title, 
