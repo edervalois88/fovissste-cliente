@@ -87,7 +87,7 @@ export const FovisssteLogo = ({ className = "w-32 h-32", animated = false }: Fov
                 stroke="#9D2449"
                 strokeWidth="2"
                 fill="transparent"
-                variants={pathVariants}
+                variants={pathVariants as any}
                 initial="hidden"
                 animate="visible"
             />
