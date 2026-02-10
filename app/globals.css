@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  @apply bg-white z-10 relative; /* Asegura que las tarjetas tengan fondo solido y z-index */
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+  }
+}
+
+/* React Grid Layout Placeholders */
+.react-grid-item.react-grid-placeholder {
+  background: rgba(157, 36, 73, 0.3) !important; /* Color Guinda Institucional transparente */
+  border-radius: 8px;
+  opacity: 0.5;
+}
+
+/* React Resizable Handle Visibility */
+.react-resizable-handle {
+    background-image: none !important;
+    background-color: transparent !important; /* Transparent but hit-testable */
+    position: absolute !important;
+    width: 30px !important; /* Larger hit area */
+    height: 30px !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    z-index: 1000 !important; /* Topmost */
+    cursor: se-resize !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block !important;
+}
+
+.react-resizable-handle::after {
+    content: '';
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    cursor: se-resize;
+}
