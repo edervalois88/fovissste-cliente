@@ -56,8 +56,8 @@ export const FovisssteLogo = ({ className = "w-32 h-32", animated = false }: Fov
                     y="0" 
                     width="100" 
                     height="100" 
-                    variants={animated ? fillVariants : {}}
-                    initial={animated ? "hidden" : "visible"} // Start immediately
+                    variants={animated ? fillVariants : {} as any}
+                    initial={animated ? "hidden" : "visible"}
                     animate="visible"
                 />
             </clipPath>
