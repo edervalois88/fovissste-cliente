@@ -13,14 +13,7 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-export interface ActivityStep {
-    id: string;
-    action: string;
-    description: string;
-    user: string;
-    timestamp: string;
-    type: 'edit' | 'upload' | 'delete' | 'move' | 'create' | 'attend';
-}
+
 
 interface DocumentLifecycleProps {
     steps: ActivityStep[];
