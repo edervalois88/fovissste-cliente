@@ -56,7 +56,7 @@ export default function AuditLogsPage() {
                 </button>
             </form>
 
-            {loading ? <PageLoader /> : (
+            {loading ? <PageLoader isVisible={loading} text="Cargando Auditoría..." /> : (
                 <div className="overflow-x-auto">
                     <table className="table table-xs w-full">
                         <thead className="bg-gray-50 text-gray-600 font-bold uppercase">
