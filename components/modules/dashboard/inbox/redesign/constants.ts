@@ -1,6 +1,14 @@
 'use client';
 
-import { ActivityStep } from './DocumentLifecycle';
+// Moved ActivityStep definition here to avoid circular dependency
+export interface ActivityStep {
+    id: string;
+    action: string;
+    description: string;
+    user: string;
+    timestamp: string;
+    type: 'edit' | 'upload' | 'delete' | 'move' | 'create' | 'attend';
+}
 
 // This would eventually be fetched from the backend or mapped from backend history
 export const MOCK_HISTORY: Record<string, ActivityStep[]> = {
